@@ -1,0 +1,27 @@
+@import '../styles/variable.scss';
+
+div.heading-container {
+    padding-top: 46px;
+
+    div.content-container {
+        h2.title {
+            @include custom-text;
+        }
+
+        div.description {
+            @include custom-text;
+
+            > span {
+                color: $custom-font-title-color-green;
+            }
+        }
+    }
+
+    div.image-container {
+        div.photo-container {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}

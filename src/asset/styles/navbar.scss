@@ -1,0 +1,36 @@
+@import '../styles/variable.scss';
+
+.navbar-container {
+    background: transparent;
+
+    .container {
+        button.navbar-btn {
+            border: 0!important;
+    
+            &:focus {
+                box-shadow: none;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url('../images/navIcon.png');
+            }
+        }
+
+        .navbar-collapse {
+            justify-content: space-between;
+
+            .navbar-nav {
+                a {
+                    color: $custom-navbar-items-color;
+                    font-size: 23px;
+                }
+            }
+
+            .brand {
+                color: $custom-font-title-color;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}

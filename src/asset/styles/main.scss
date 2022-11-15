@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../images/background.png") no-repeat center / cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Graphie';
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
