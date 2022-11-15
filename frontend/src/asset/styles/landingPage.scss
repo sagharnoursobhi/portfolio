@@ -1,27 +1,64 @@
 @import '../styles/variable.scss';
 
-div.heading-container {
-    padding-top: 46px;
+div.landing-container {
+    margin-top: 63px;
 
-    div.content-container {
-        h2.title {
-            @include custom-text;
-        }
+    div.heading-container {
+        padding-top: 46px;
+        max-width: 1000px;
+        margin: 40px auto;
+    
+        div.content-container {
+            h2.title-first {
+                @include custom-text;
+            }
+    
+            div.title-second {
+                @include custom-text;
+    
+                > span {
+                    color: $custom-font-title-color-green;
+                }
+            }
 
-        div.description {
-            @include custom-text;
+            div.description {
+                color: $custom-navbar-items-color;
+                font-size: 20px;
+                font-weight: 400;
+            }
 
-            > span {
-                color: $custom-font-title-color-green;
+            .introduction {
+                color: $custom-font-title-color;
+                font-size: 30px;
             }
         }
-    }
-
-    div.image-container {
-        div.photo-container {
-            img {
-                width: 400px;
+    
+        div.image-container {
+    
+            div.photo-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    max-width: 400px;
+                }
+    
+                &::before {
+                    content: "";
+                    display: block;
+                    background: $background-color-light-blue;
+                    position: absolute;
+                    z-index: -1;
+                    width: 397px;
+                    height: 100%;
+                    top: 42%;
+                    left: 60%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
 }
+
